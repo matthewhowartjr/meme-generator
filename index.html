@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MEME GENERATOR</h1>
+
+    <div id="meme-wrapper">
+        <div id="meme-display">
+            <p id="top-text">Sample</p>
+            <p id="bottom-text">Text</p>
+            <img id="meme" src="https://static01.nyt.com/images/2020/01/28/multimedia/28xp-memekid3/28cp-memekid3-superJumbo.jpg?quality=90&auto=webp">
+        </div>
+        
+        <form id="meme-settings">
+            <h2>Settings</h2>
+            <label class="setting" for="meme-url">Image URL:</label>
+            <input class="setting" id="meme-url" placeholder="https://static01.nyt.com/images/2020/01/28/multimedia/28xp-memekid3/28cp-memekid3-superJumbo.jpg?quality=90&auto=webp">
+    
+            <br/>
+    
+            <label class="setting" for="meme-top-input">Top Text:</label>
+            <input class="setting" id="meme-top-input" placeholder="Sample">
+    
+            <br/>
+    
+            <label class="setting" for="meme-bottom-input">Bottom Text:</label>
+            <input class="setting" id="meme-bottom-input" placeholder="Text">
+    
+            <br/>
+    
+            <label class="setting" for="meme-font-size">Font Size:</label>
+            <input class="setting" id="meme-font-size" type="range" min="16" max="64">
+    
+            <br/>
+    
+            <label class="setting" for="meme-font-color">Font Color:</label>
+            <input id="meme-font-color" type="color">
+    
+            <br/>
+    
+            <button id="save-meme">Save</button>
+        </form>
+    </div>
+    
+
+    <div id="meme-saved">
+        <h2>Saved Memes</h2>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
